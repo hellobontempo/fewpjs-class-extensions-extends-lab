@@ -32,7 +32,7 @@ class Triangle extends Polygon {
 
     get isValid () {
         const [a, b, c] = this.array
-        return ((a + b) > c && (b + c) > a && (a + c) > b) ? true : false
+        return ((a + b) > c && (b + c) > a && (a + c) > b && this.array.length === 3) ? true : false
     }
 
 }
